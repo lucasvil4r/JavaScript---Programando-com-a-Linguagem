@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While - If</title>
+    <style>
+        table {
+            border: 2px solid;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+    <script>
+        document.write("<table>");
+            var cont = 1;//contadora e controladora
+            while(cont <= 20 ){
+                if(cont % 5 == 0){
+                    cor = "#C00"
+                }else if(cont % 2 == 0){
+                    cor = "#CCC"
+                }else{
+                    cor = "#FFF";
+                }
+                document.write('<tr><td style="background-color:'+cor+'">'+cont+'</td></tr>');
+                cont++;
+            }
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios2</title>
+    <script>
+    window.onload = function()
+    {
+        var envia = document.getElementById('envia');
+        var contato = document.getElementById('contato');
+
+        function valida()
+        {
+            var nome = document.getElementById('nome');
+            var fone = document.getElementById('fone');
+            var curso = document.getElementById('curso');
+        
+                if(nome.value == '')
+                {
+                    alert('Campo nome obrigatório');
+                } 
+                else if(fone.value == '')
+                {
+                    alert('Campo telefone obrigatório');
+                } 
+                else if(curso.value == 0)
+                {
+                    alert ('Selecione o curso');
+                } 
+                else
+                {
+                    envia.value="Concluido";
+                    envia.disabled=true;
+                    envia.style.background='#00FF00'; 
+                    alert ('Sucesso');
+                    contato.submit();
+                }
+            }
+            envia.onclick = function()
+            {
+                valida();
+            }
+    }
+    </script>
+</head>
+<body>
+    <h2>Contato</h2>
+    <form action="#" id="contato" method="post">
+		<label> *Nome <input type="text" name="nome" id="nome" /> </label>
+		<label> *Tel <input type="text" name="fone" id="fone" /> </label>
+		<label> *Curso 
+		<select name="curso" id="curso">
+			<option value="0">Selecione ... </option>
+			<option value="1"> Javascript </option>
+			<option value="2"> C# </option>
+			<option value="3"> Jquery </option>
+			<option value="4"> Java </option>
+			<option value="5"> VB </option>
+			<option value="6"> CSS3 </option>
+		</select>
+		</label>
+		<label> <input type="button"  id="envia" value="Enviar" /> </label>
+    </form>
+</body>
+</html>
+<!--
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+	label {
+                        float:left;
+                        clear:left;
+	}
+        </style>
+        <script>
+         window.onload = function()
+         {
+             
+             var envia = document.getElementById('envia');
+             var contato = document.getElementById('contato');
+             
+             function valida()
+             {
+                var nome = document.getElementById('nome');
+                var fone = document.getElementById('fone');
+                var curso = document.getElementById('curso');
+                
+                
+                   if(nome.value == '')
+                   {
+                       alert('Campo Nome é obrigatório');
+                   }
+                   else if(fone.value=='')
+                   {
+                       alert('Campo Fone é obrigatório');                       
+                   }
+                   else if(curso.value == 0)
+                   {
+                       alert('Selecione um curso');                        
+                   }
+                   else
+                   {
+                       envia.value="Concluido";
+                       envia.disabled=true;
+                       envia.style.background='#00FF00'; 
+                       alert ('Sucesso');
+                       contato.submit();
+                   }   
+               }
+               envia.onclick = function()
+               {
+                   valida();
+               }
+         }
+        </script>
+    </head>
+    <body>
+        <h2> Contato </h2>
+	
+	
+	<form  id="contato" method="get" action="http://www.impacta.com.br" >
+		
+		<label> *Nome <input type="text" name="nome" id="nome" /> </label>
+		<label> *Tel <input type="text" name="fone" id="fone" /> </label>
+		<label> *Curso 
+		<select name="curso" id="curso">
+			<option value="0">Selecione ... </option>
+			<option value="1"> Javascript </option>
+			<option value="2"> C# </option>
+			<option value="3"> Jquery </option>
+			<option value="4"> Java </option>
+			<option value="5"> VB </option>
+			<option value="6"> CSS3 </option>
+		</select>
+		</label>
+		<label> <input type="button"  id="envia" value="Enviar" /> </label>
+	
+	
+	</form>
+    </body>
+</html>
+-->
