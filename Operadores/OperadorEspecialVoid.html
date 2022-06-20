@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador especial Void</title>
+    <script>
+    window.onload = function()
+    {
+        document.getElementById("um").href="javascript:void(document.body.style.backgroundColor='#ffffff')";
+        document.getElementById("dois").href="javascript:void(document.body.style.backgroundColor='#00FFFF')";
+        document.getElementById("tres").href="javascript:void(0)";
+    }
+    </script>
+</head>
+<body>
+    <section>
+        <p><a id="um">Muda branco</a></p>
+        <p><a id="dois">Muda cor de fundo para azul</a></p>
+        <p><a id="tres">Não faz nada</a></p>
+    </section>
+</body>
+</html>

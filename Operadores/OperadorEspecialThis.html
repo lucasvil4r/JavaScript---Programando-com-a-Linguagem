@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador especial This</title>
+    <script>
+        window.onload = function()
+        {
+            document.getElementById('botao').onclick=function()
+            {
+                alert(this.id+' '+this.value)    
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <div>Curso JS "Operador especial This"</div>
+    <br>
+    <input type="button" id="botao" value="Quem sou eu ?">
+</body>
+</html>
