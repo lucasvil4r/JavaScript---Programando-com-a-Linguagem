@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <script>
+        var cores = new Array('Red','Blue','Green','Yellow');
+        var curso = ['PHP','JS','MySQL','HTML'];
+        var tamArray = cores.length // quantidade elementos
+
+        document.write('<h4>Mostra todos os valores do array</h4>',cores);
+        document.write('<hr>')
+
+        document.write('<h4>Mostra o valores que indice está indicando no array</h4>')
+        document.write(cores[1]);
+        document.write('<hr>')
+
+        document.write('<h4>Mostra todos os valores do array dinamicamente</h4>')
+        for(i=0;i < tamArray;i++){
+            document.write(cores[i])
+            document.write('<br>')
+        }
+
+        document.write('<hr>')
+        document.write('<h4>Quando os indices dos arrays são excedidos exibe mensagem "undefined"</h4>')
+        for(i=0;i < 6;i++){
+            document.write(cores[i])
+            document.write('<br>')
+        }
+
+       //forEach
+        document.write('<hr>')
+        document.write('<h4>forEach</h4>')
+
+        var mensagem = "";
+        function le(elemeto,indice,objeto){
+            mensagem +="Cores["+indice+"]="+elemeto+"\n"
+        }
+
+        /*
+        cores.forEach(le);
+        alert(cores)
+        alert(mensagem)*/
+        console.log(typeof cores)
+    </script>
+</head>
+<body>
+</body>
+</html>
