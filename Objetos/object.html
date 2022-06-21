@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+    <script>
+        //Objeto primitivo --> generico
+        //Todos os outros objetos serao herança dele
+
+        var Airbus = new Object();
+
+        Airbus.a380 = "Intercontinental";
+        Airbus.a320 = "Nacional";
+        Airbus.voar = function(){
+            return "Europeu";
+        }
+
+        console.log(Airbus);
+        console.log(Airbus.a380);
+        console.log(Airbus['a320']);
+        console.log(Airbus.voar());
+
+    </script>
+</head>
+<body>
+</body>
+</html>
