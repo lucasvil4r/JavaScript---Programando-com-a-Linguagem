@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Características</title>
+    <title>Chamada de função</title>
     <script>
-        /*Ultilizando função*/
+    window.onload = function(){
+
+        (function(){
+
+            alert('Curso JS');
+
+        })();
+
+    }
+
+
     function potencia(num, pot){
         var total  = 1
         for(i=1 ; i <=pot ; i++){
             total = total * num;
         }
-        return(total);
+        returntotal;
     }
-    var resultado = potencia(10, 2) + potencia(10, 2); 
-    document.write(resultado);
-    document.write("<br>");
-    document.write(potencia(potencia(2,3),2));
+
+
+
+
+    /*console.log(potencia)
+
+    alert(potencia);
+
+    var escola = new Function(alert('Curso JS'))
+    escola()*/
     </script>
 </head>
 <body>
