@@ -4,46 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array</title>
+    <title>Array2</title>
     <script>
-        var cores = new Array('Red','Blue','Green','Yellow');
-        var curso = ['PHP','JS','MySQL','HTML'];
-        var tamArray = cores.length // quantidade elementos
+        //var cores = new Array('Red','Blue','Green','Yellow'); //1° forma de criar array
+        //var tamArray = cores.length // quantidade elementos
 
-        document.write('<h4>Mostra todos os valores do array</h4>',cores);
+        var cursoInfra = new Array(); // 3° forma de criar uma array
+        cursoInfra[0] = 'REDES';
+        cursoInfra[1] = 'WIRELESS';
+        cursoInfra[2] = 'CABEAMENTO';
+        cursoInfra[3] = 'REDES';
+        cursoInfra[4] = 'WIRELESS';
+        cursoInfra[5] = 'CABEAMENTO';
+        console.log(cursoInfra)
+
+        var tamArray = cursoInfra.length // quantidade elementos
+
+        //var cursoProgramacao = ['PHP','JS','MySQL','HTML']; //2° forma de criar array
+        //var tamArray = cursoProgramacao.length // quantidade elementos DO ARRAY
+
+        document.write('<h4>Mostra todos os valores do array</h4>',cursoInfra);
         document.write('<hr>')
 
         document.write('<h4>Mostra o valores que indice está indicando no array</h4>')
-        document.write(cores[1]);
+        document.write(cursoInfra[1]);
+        document.write('<hr>')
+
+        document.write('<h4>#</h4>')
+        document.write(cursoInfra.constructor);
+        document.write('<hr>')
+
+        document.write('<h4>Pop remove valores de Array</h4>')
+        cursoInfra.pop(); // remove ultimo valor array 
+        cursoInfra.shift(); // remove ultimo valor array
+        document.write(cursoInfra);
         document.write('<hr>')
 
         document.write('<h4>Mostra todos os valores do array dinamicamente</h4>')
         for(i=0;i < tamArray;i++){
-            document.write(cores[i])
+            document.write(cursoInfra[i]);
             document.write('<br>')
         }
 
         document.write('<hr>')
         document.write('<h4>Quando os indices dos arrays são excedidos exibe mensagem "undefined"</h4>')
         for(i=0;i < 6;i++){
-            document.write(cores[i])
+            document.write(cursoInfra[i]);
             document.write('<br>')
         }
 
-       //forEach
-        document.write('<hr>')
-        document.write('<h4>forEach</h4>')
-
+        //forEach
         var mensagem = "";
         function le(elemeto,indice,objeto){
-            mensagem +="Cores["+indice+"]="+elemeto+"\n"
+            mensagem +="cursoInfra["+indice+"]="+elemeto+"\n"
         }
 
         /*
         cores.forEach(le);
-        alert(cores)
-        alert(mensagem)*/
-        console.log(typeof cores)
+        alert(curso)
+        alert(mensagem)
+        console.log(typeof cores)*/
     </script>
 </head>
 <body>

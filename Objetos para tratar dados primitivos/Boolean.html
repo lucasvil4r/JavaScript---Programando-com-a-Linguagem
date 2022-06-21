@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean</title>
+    <script>
+        // 0 representa false / 1 representa true
+        //null - 0 - NaN retorna false
+        var autorizado = new Boolean(26);
+        document.write(typeof autorizado);
+        document.write('<br>');
+        document.write(autorizado instanceof Object);
+        document.write('<br>');
+        document.write(autorizado instanceof Boolean);
+        document.write('<br>');
+        document.write(autorizado instanceof Number);
+        document.write('<br>');
+        document.write(autorizado.valueOf());
+    </script>
+    <script>
+            //var autorizado = new Boolean(true);
+            //var autorizado = new Boolean(25);
+            //o que será false - nada - 0 - '' - Nan - null
+            //todo o resto retornará true
+           var autorizado = new Boolean(1700);
+            document.write(typeof autorizado);
+            document.write("<br>");
+            //document.write(autorizado instanceof Object);
+            document.write("<br>");
+            //document.write(autorizado instanceof Boolean);
+            document.write("<br>");
+            //document.write(autorizado instanceof Number);//false
+            document.write("<br>");
+            document.write(autorizado.valueOf());//false
+        </script>
+</head>
+<body>
+</body>
+</html>
