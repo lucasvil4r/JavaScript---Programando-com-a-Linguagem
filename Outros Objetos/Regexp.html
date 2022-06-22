@@ -6,11 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regexp</title>
     <script>
-        
-    
+        var regexp = new RegExp("pre","i"); // "i" ignora caixa alta e caixa baixa
+        var string = "Edu Pretel prefe atendimento na previa do filme";
+        //alert(regexp.test(string)); // retorna true se valor for encontrado
+        //alert(regexp.exec(string)); // 1° ocorrencia
+
+        //2° maneira - sintaxe literal
+        var regexp2 = /imp/i;
+        var string2 = "O Rato roeu a roupa do rei de Roma";
+        //alert(string2.match(/Ro/i));
+        //alert(string2.match(/Ro/ig));
+
+        var a = string2.match(/Ro/ig);
+        //alert(a.length)
+
+        alert(string2.replace(/r[a-z]/ig))
     </script>
 </head>
 <body>
-    
 </body>
 </html>
