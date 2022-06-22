@@ -1,3 +1,3 @@
-# JavaScript---Programando-com-a-Linguagem
+# JavaScriptProgramandoLinguagem
 
 Trajetória cuso JavaScript
