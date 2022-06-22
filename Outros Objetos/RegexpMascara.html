@@ -6,9 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regexp</title>
     <script>
+        function somenteNumeros(e){
+            var tecla = (window.event)?event.KeyCode:e.which;    
+            if(tecla > 47 && tecla < 58){ // <--- 57 a 58 na tabela ascii de 0 - 9
+                return true;
+            }else{
+                if(tecla == 8 || tecla == 0){
+                    return true
+                }else{
+                    return false
+                }
+            }
+        }
         //alert(/^\d\d\d\d-\d\d\d\d$/.test("0000-0000"));
         //alert(/^[0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]$/.test("0000-0000"));
-        alert(/^[0-9]{4}-[0-9]{4}$/.test("0000-0000"));
+        //alert(/^[0-9]{4}-[0-9]{4}$/.test("0000-0000"));
     </script>
 </head>
 <body>
