@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança</title>
+    <script>
+        //prototype
+        var agora = new Date();
+        //alert(agora.getDay());
+        //alert(agora.getDay());
+
+        Date.prototype.diasSemana = ['Dom','Seg','Ter','Qua','Qui','Sex','Sab'];
+        Date.prototype.hoje = function(){
+            return this.diasSemana[this.getDay()];
+        }
+
+        var agora = new Date();
+        alert(agora.hoje());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
