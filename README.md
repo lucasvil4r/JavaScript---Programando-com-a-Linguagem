@@ -1,3 +1,3 @@
-# JavaScriptProgramandoLinguagem
+# CursoJavaScript
 
 Trajetória cuso JavaScript
