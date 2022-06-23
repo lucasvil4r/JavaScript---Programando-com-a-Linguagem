@@ -6,18 +6,21 @@
         <script>
             window.onload = function () {
                 document.getElementById('botao').onclick = function(){
+
+                    //DOM HTML
                     document.getElementById('titulo').innerHTML= "Impacta Cursos Online!!!";
-                    ///alert(document.getElementById('titulo').innerHTML); //DOM HTML
-                    //alert(document.getElementById('titulo').firstChild.nodeValue); //DOM CORE
-                    //alert(document.getElementById('titulo').childNodes[0].nodeValue); //DOM CORE
-                    
-                    //document.getElementById('bueiro').src = "bueiros/b002.jpg"; //DOM HTML
-                    //document.getElementById('bueiro'). setAttribute('src', "bueiros/b002.jpg"); //DOM CORE
+                    ///alert(document.getElementById('titulo').innerHTML);
+                    //document.getElementById('bueiro').src = "logo_GP_Cabling_alta_RQ.jpg";
+
+                    //DOM CORE
+                    //alert(document.getElementById('titulo').firstChild.nodeValue);
+                    //alert(document.getElementById('titulo').childNodes[0].nodeValue);
+                    //document.getElementById('bueiro'). setAttribute('src', "logo_GP_Cabling_alta_RQ.jpg");
 
                     //DOM CSS
-                    //document.getElementById('titulo').style.color="#FF0000";
+                    //document.getElementById('titulo').style.color="#blue";
                     //document.getElementById('titulo').style.border="1px solid #000000";
-                    //document.getElementById('titulo'). setAttribute('style', "color:#FF0000;border:1px solid #000000");
+                    document.getElementById('titulo'). setAttribute('style', "color:blue;border:3px solid #000000");
                 }
             }
         </script>
@@ -25,7 +28,7 @@
     <body>
         <h1 id="titulo">Titulo artigo</h1>
         <p id = "texto"> Texto para formatação</p>
-        <img id="bueiro" src="bueiros/b001.jpg" alt=""/>
+        <img id="bueiro" src="" alt=""/>
         <input type="button" name="botao" id="botao" value="Formatar!!!">
     </body>
 </html>
