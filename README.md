@@ -1,3 +1,3 @@
 # CursoJavaScript
 
-Trajetória cuso JavaScript
+Projetos em JS para praticar.
