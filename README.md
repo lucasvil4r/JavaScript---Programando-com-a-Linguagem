@@ -1,3 +1,3 @@
 # CursoJavaScript
 
-Projetos em JS para praticar.
+Curso JS IMPACTA
