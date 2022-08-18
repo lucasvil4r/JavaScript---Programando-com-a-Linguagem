@@ -17,9 +17,9 @@ Curso feito com as seguintes tecnologias:
 * Você instalou algum browser para interpretar JS
 
 
-## 📫 Contribuindo para <PHP_conceitos_essenciais>
+## 📫 Contribuindo para <javascript_programando_com_a_linguagem>
 <!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
-Para contribuir com <PHP_conceitos_essenciais>, siga estas etapas:
+Para contribuir com <javascript_programando_com_a_linguagem>, siga estas etapas:
 
 1. Bifurque este repositório.
 2. Crie um branch: `git checkout -b <nome_branch>`.
